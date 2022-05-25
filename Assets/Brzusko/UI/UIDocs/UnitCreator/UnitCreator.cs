@@ -7,7 +7,6 @@ using UnityEditor.UIElements;
 public class UnitCreator : EditorWindow
 {
     private VisualElement _root;
-    private readonly string _unitsCatalog = "Assets/Brzusko/Prefabs/Units";
 
     [MenuItem("Tools/UnitCreator")]
     public static void ShowExample()
