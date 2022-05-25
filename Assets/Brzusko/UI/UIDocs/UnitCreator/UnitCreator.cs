@@ -6,32 +6,28 @@ using UnityEditor.UIElements;
 
 public class UnitCreator : EditorWindow
 {
-    [MenuItem("Window/UI Toolkit/UnitCreator")]
+    private VisualElement _root;
+    private readonly string _unitsCatalog = "Assets/Brzusko/Prefabs/Units";
+
+    [MenuItem("Tools/UnitCreator")]
     public static void ShowExample()
     {
         UnitCreator wnd = GetWindow<UnitCreator>();
         wnd.titleContent = new GUIContent("UnitCreator");
+        wnd.minSize = new Vector2(0, 600);
     }
 
     public void CreateGUI()
     {
         // Each editor window contains a root VisualElement object
-        VisualElement root = rootVisualElement;
-
-        // VisualElements objects can contain other VisualElement following a tree hierarchy.
-        VisualElement label = new Label("Hello World! From C#");
-        root.Add(label);
+        _root = rootVisualElement;
 
         // Import UXML
         var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Brzusko/UI/UIDocs/UnitCreator/UnitCreator.uxml");
-        VisualElement labelFromUXML = visualTree.Instantiate();
-        root.Add(labelFromUXML);
+        _root.Add(visualTree.Instantiate());
 
-        // A stylesheet can be added to a VisualElement.
-        // The style will be applied to the VisualElement and all of its children.
         var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Brzusko/UI/UIDocs/UnitCreator/UnitCreator.uss");
-        VisualElement labelWithStyle = new Label("Hello World! With Style");
-        labelWithStyle.styleSheets.Add(styleSheet);
-        root.Add(labelWithStyle);
+        _root.styleSheets.Add(styleSheet);
     }
+
 }
