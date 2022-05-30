@@ -7,7 +7,6 @@ public class Unit : MonoBehaviour, ISpawnable
 {
     [SerializeField]
     private UnitSO _unitData;
-
     private IUnitBuilder _builder;
 
     protected virtual void Awake()
