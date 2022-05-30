@@ -11,4 +11,6 @@ public class CommandSO : ScriptableObject
     private float _cooldown;
     [SerializeField]
     private Sprite _icon;
+    [SerializeField]
+    private GameObject _commandPrefab;
 }
