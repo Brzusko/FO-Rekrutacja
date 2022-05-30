@@ -16,4 +16,5 @@ public class UnitSO : ScriptableObject
     //list of commands
     [SerializeField]
     private CommandSO[] _commands;
+    public IList<CommandSO> Comamnds => _commands;
 }
