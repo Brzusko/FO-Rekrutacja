@@ -2,17 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CommandBuildingSO : MonoBehaviour
+[CreateAssetMenu(fileName = "NewCommandBuilding", menuName = "Units/Commands/BuildingCommand")]
+public class CommandBuildingSO : CommandSO
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private BuildingSO[] _buildingsToBuild;
 }

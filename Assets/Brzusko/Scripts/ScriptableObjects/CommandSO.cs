@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CommandSO : MonoBehaviour
+[CreateAssetMenu(fileName = "NewCommand", menuName = "Units/Commands/Command")]
+public class CommandSO : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private string _commandName;
+    [SerializeField]
+    private float _cooldown;
+    [SerializeField]
+    private Sprite _icon;
 }

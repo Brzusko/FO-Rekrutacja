@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BuildingSO : MonoBehaviour
+[CreateAssetMenu(fileName = "NewBuilding", menuName = "Units/Building")]
+public class BuildingSO : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private string _buildingName;
+    [SerializeField]
+    private GameObject _building;
+    [SerializeField]
+    private float _timeToBuild;
 }
