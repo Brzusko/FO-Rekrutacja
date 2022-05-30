@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnitSO : MonoBehaviour
+[CreateAssetMenu(fileName = "NewUnit", menuName = "Units/Unit")]
+public class UnitSO : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private float _maxHealth;
+    [SerializeField]
+    private float _movementSpeed;
+    [SerializeField]
+    private Sprite _unitIcon;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //list of commands
 }
