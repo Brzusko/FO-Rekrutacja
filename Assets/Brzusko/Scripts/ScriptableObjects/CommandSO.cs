@@ -13,4 +13,7 @@ public class CommandSO : ScriptableObject
     private Sprite _icon;
     [SerializeField]
     private GameObject _commandPrefab;
+
+    public GameObject CommandObject => _commandPrefab;
+    public string CommandName => _commandName;
 }

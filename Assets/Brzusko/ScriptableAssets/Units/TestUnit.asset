@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7a0aa38df90be47954609fbb4cc81a, type: 3}
+  m_Name: TestUnit
+  m_EditorClassIdentifier: 
+  _unitName: Test Unit
+  _maxHealth: 100
+  _movementSpeed: 100
+  _unitIcon: {fileID: 7482667652216324306, guid: 443ac46e41ead0e42ba5aed1cf958bce, type: 3}
+  _commands:
+  - {fileID: 11400000, guid: f897e91b03aea3a4ba27727c0a3b4090, type: 2}
