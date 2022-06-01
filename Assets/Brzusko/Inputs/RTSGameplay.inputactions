@@ -1,0 +1,54 @@
+{
+    "name": "RTSGameplay",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "e1a9a011-e30d-4264-ad84-fb62a2e534ff",
+            "actions": [
+                {
+                    "name": "Interaction",
+                    "type": "Button",
+                    "id": "9adb765b-16ae-44d2-98f1-76986a35e21b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Addition",
+                    "type": "Button",
+                    "id": "04c32292-4a89-476c-8d70-3cba10d13c5e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ea6545e5-0c9e-449d-912b-fb8cde79ae32",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interaction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4e8aebc-0790-4cd8-bceb-5192ed00971e",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Addition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
