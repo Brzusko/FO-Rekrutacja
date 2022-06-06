@@ -6,4 +6,11 @@ namespace Brzusko.Enums
         B,
         NONE
     }
+
+    public enum SelectableType
+    {
+        UNIT,
+        BUILDING,
+        NONE
+    }
 }
